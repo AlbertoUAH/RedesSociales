@@ -1,0 +1,21 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\Delfines.net
+N 1 RDN "E:\UCM\Redes Sociales\Delfines.net" (62)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 1 MODULARITYML 1 20 50 10 20 1.0000000000 0.500000 (62)
+% Shrinking
+N 2 SHR 1 1 [1 ,0,1] (5)
+% All degree centrality of 2. Shrinking N1 according to C1 [1,0] (5)
+V 1 DEGV 2 [2] (5)
+E 2 CIRCULAR
+E 2 DRAW 0 0 0 0 0
+% Input degree centrality of 2. Shrinking N1 according to C1 [1,0] (5)
+V 2 DEGV 2 [0] (5)
+% Disposing Vector...
+V 2 DV  (5)

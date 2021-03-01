@@ -1,0 +1,89 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Partition   ---    E:\UCM\Redes Sociales\BorrarTresPrimeros.clu
+C 1 RDC "E:\UCM\Redes Sociales\BorrarTresPrimeros.clu" (77)
+% Reading Network   ---    E:\UCM\Redes Sociales\LosMiserables.net
+N 1 RDN "E:\UCM\Redes Sociales\LosMiserables.net" (77)
+% Extracting Subnetwork according to Partition
+N 2 EXT 1 1 [0] 1 (75)
+E 2 CIRCULAR
+E 2 DRAW 0 0 0 0 0
+E 2 KAMADA
+% 2. Extracting N1 according to C1 [0] (75)
+N 2 INFONET 2 1 1 (75)
+% 2. Extracting N1 according to C1 [0] (75)
+N 2 INFONET 2 0 1 (75)
+% Bernoulli/Poisson random network generator
+N 3 ERDREN  [75, 6.640, 1, 0] (75)
+% 3. Undirected Erdos-Renyi random network [6.640] (75)
+N 3 INFONET 3 0 1 (75)
+% All degree centrality of 3. Undirected Erdos-Renyi random network [6.640] (75)
+V 1 DEGV 3 [2] (75)
+% All degree centrality of 2. Extracting N1 according to C1 [0] (75)
+V 2 DEGV 2 [2] (75)
+% Disposing Vector...
+V 2 DV  (75)
+% Disposing Vector...
+V 1 DV  (75)
+% Constant Partition
+C 3 CONSTANTC 0 (75)
+E 2 DRAW 3 0 0 0 0
+% All degree centrality of 2. Extracting N1 according to C1 [0] (75)
+V 3 DEGV 2 [2] (75)
+% All degree centrality of 3. Undirected Erdos-Renyi random network [6.640] (75)
+V 4 DEGV 3 [2] (75)
+% Program R called with Pajek objects
+% Saving vector to file   ---    E:\UCM\Redes Sociales\mi_red.vec
+V 3 WV "E:\UCM\Redes Sociales\mi_red.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\aleatorio.vec
+V 4 WV "E:\UCM\Redes Sociales\aleatorio.vec" 0 (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+C 3 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel1.txt" -1 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+E 2 DRAW 0 0 0 0 0
+%  Undirected scale free random network generator
+N 4 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+E 4 DRAW 0 0 0 0 0
+E 4 KAMADA
+E 4 CIRCULAR
+% All degree centrality of 4. Undirected Scale free random network (75)
+V 5 DEGV 4 [2] (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+C 3 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"
+% Saving INI File
+SAVEINI "E:\UCM\Redes Sociales\practica.ini"
+% Saving network to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving network to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving network to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving network to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving partition to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving partition to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving partition to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving vector to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving vector to file   ---    E:\UCM\Redes Sociales\apartados.paj
+% Saving vector to file   ---    E:\UCM\Redes Sociales\apartados.paj
+N 9999 WRPAJ "E:\UCM\Redes Sociales\apartados.paj"
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\red_inicial.net
+N 1 WN "E:\UCM\Redes Sociales\networks\red_inicial.net" 0 (77)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 2 WN "E:\UCM\Redes Sociales\networks\red_depurada.net" 0 (75)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\erdos_renyi.net
+N 3 WN "E:\UCM\Redes Sociales\networks\erdos_renyi.net" 0 (75)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\libre_escala.net
+N 4 WN "E:\UCM\Redes Sociales\networks\libre_escala.net" 0 (75)
+% Saving partition to file   ---    E:\UCM\Redes Sociales\networks\vertices_normal.clu
+C 2 WC "E:\UCM\Redes Sociales\networks\vertices_normal.clu" (75)
+% Saving partition to file   ---    E:\UCM\Redes Sociales\networks\particion_constante.clu
+C 3 WC "E:\UCM\Redes Sociales\networks\particion_constante.clu" (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\vector_normal.vec
+V 3 WV "E:\UCM\Redes Sociales\networks\vector_normal.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\vector_random.vec
+V 4 WV "E:\UCM\Redes Sociales\networks\vector_random.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\vector_libre_escala.vec
+V 5 WV "E:\UCM\Redes Sociales\networks\vector_libre_escala.vec" 0 (75)

@@ -1,0 +1,21 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Loading INI File
+LOADINI "E:\UCM\Redes Sociales\practica.ini"
+% Reading Pajek Project File  ---    E:\UCM\Redes Sociales\apartados.paj
+% Reading Network   ---    E:\UCM\Redes Sociales\LosMiserables.net
+% Reading Network   ---    Extracting N1 according to C1 [0]
+% Reading Network   ---    Undirected Erdos-Renyi random network [6.640]
+% Reading Network   ---    Undirected Scale free random network
+% Reading Partition   ---    E:\UCM\Redes Sociales\BorrarTresPrimeros.clu
+% Reading Partition   ---    Extracting from C1 vertices determined by C1 [0]
+% Reading Partition   ---    Constant [0] partition
+% Reading Vector   ---    All Degree of N2
+% Reading Vector   ---    All Degree of N3
+% Reading Vector   ---    All Degree of N4
+N 9999 RDPAJ "E:\UCM\Redes Sociales\apartados.paj"

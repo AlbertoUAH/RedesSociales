@@ -1,0 +1,9 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Erdos-Renyi random network generator  
+N 1 RNDNFF [0] (1000)

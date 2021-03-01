@@ -1,0 +1,256 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 1 RDN "E:\UCM\Redes Sociales\networks\red_depurada.net" (75)
+E 1 DRAW 0 0 0 0 0
+% Bernoulli/Poisson random network generator
+N 2 ERDREN  [75, 6.640, 1, 0] (75)
+% 2. Undirected Erdos-Renyi random network [6.640] (75)
+N 2 INFONET 2 0 1 (75)
+%  Undirected scale free random network generator
+N 3 SCALEF  [2 1 75 999999999 5 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 3 DN  (75)
+%  Undirected scale free random network generator
+N 4 SCALEF  [2 1 75 999999999 5 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 5 SCALEF  [2 1 75 999999999 6 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 5 DN  (75)
+% Disposing Network...
+N 4 DN  (75)
+%  Undirected scale free random network generator
+N 6 SCALEF  [2 1 75 999999999 5 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 7 SCALEF  [2 1 75 999999999 6 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 8 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 9 SCALEF  [2 1 75 999999999 8 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 9 DN  (75)
+%  Undirected scale free random network generator
+N 10 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 11 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 12 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 6 DN  (75)
+% Disposing Network...
+N 7 DN  (75)
+% Disposing Network...
+N 8 DN  (75)
+% Disposing Network...
+N 10 DN  (75)
+% Disposing Network...
+N 11 DN  (75)
+% Disposing Network...
+N 12 DN  (75)
+%  Undirected scale free random network generator
+N 13 SCALEF  [2 1 75 999999999 5 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 14 SCALEF  [2 1 75 999999999 5 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 15 SCALEF  [2 1 75 999999999 5 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 16 SCALEF  [2 1 75 999999999 5 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 16 DN  (75)
+% Disposing Network...
+N 13 DN  (75)
+% Disposing Network...
+N 14 DN  (75)
+% Disposing Network...
+N 15 DN  (75)
+%  Undirected scale free random network generator
+N 17 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 18 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 19 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 20 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 20 DN  (75)
+% Disposing Network...
+N 19 DN  (75)
+% Disposing Network...
+N 18 DN  (75)
+N 17 NETNAME Undirected Scale free random network
+% Disposing Network...
+N 17 DN  (75)
+%  Undirected scale free random network generator
+N 21 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 21 DN  (75)
+%  Undirected scale free random network generator
+N 22 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 22 DN  (75)
+%  Undirected scale free random network generator
+N 23 SCALEF  [2 1 75 999999999 6 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 24 SCALEF  [2 1 75 999999999 6 6.64000 0.20000 0.25000 0.25000] (75)
+E 24 DRAW 0 0 0 0 0
+%  Undirected scale free random network generator
+N 25 SCALEF  [2 1 75 999999999 6 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 26 SCALEF  [2 1 75 999999999 6 6.64000 0.20000 0.25000 0.25000] (75)
+%  Undirected scale free random network generator
+N 27 SCALEF  [2 1 75 999999999 6 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 27 DN  (75)
+% Disposing Network...
+N 23 DN  (75)
+% Disposing Network...
+N 24 DN  (75)
+% Disposing Network...
+N 25 DN  (75)
+% Disposing Network...
+N 26 DN  (75)
+%  Undirected scale free random network generator
+N 28 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 28 DN  (75)
+%  Undirected scale free random network generator
+N 29 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+% Small World random network generator
+N 30 SMALLWORLD [75, 2, 0.200] (75)
+% 30. Small World random network [75,2,0.200] (75)
+N 30 INFONET 30 0 1 (75)
+% Small World random network generator
+N 31 SMALLWORLD [75, 2, 0.200] (75)
+% 31. Small World random network [75,2,0.200] (75)
+N 31 INFONET 31 0 1 (75)
+% Disposing Network...
+N 31 DN  (75)
+% Small World random network generator
+N 32 SMALLWORLD [75, 2, 0.200] (75)
+% 32. Small World random network [75,2,0.200] (75)
+N 32 INFONET 32 0 1 (75)
+% Disposing Network...
+N 32 DN  (75)
+% Disposing Network...
+N 30 DN  (75)
+% Small World random network generator
+N 33 SMALLWORLD [75, 3, 0.200] (75)
+% 33. Small World random network [75,3,0.200] (75)
+N 33 INFONET 33 0 1 (75)
+% Small World random network generator
+N 34 SMALLWORLD [75, 4, 0.200] (75)
+% 34. Small World random network [75,4,0.200] (75)
+N 34 INFONET 34 0 1 (75)
+% Disposing Network...
+N 34 DN  (75)
+% Disposing Network...
+N 33 DN  (75)
+% Small World random network generator
+N 35 SMALLWORLD [75, 5, 0.200] (75)
+% 35. Small World random network [75,5,0.200] (75)
+N 35 INFONET 35 0 1 (75)
+% Disposing Network...
+N 35 DN  (75)
+E 1 DRAW 0 0 0 0 0
+% Small World random network generator
+N 36 SMALLWORLD [75, 3, 0.200] (75)
+% 36. Small World random network [75,3,0.200] (75)
+N 36 INFONET 36 0 1 (75)
+% 36. Small World random network [75,3,0.200] (75)
+N 36 INFONET 36 0 1 (75)
+% 36. Small World random network [75,3,0.200] (75)
+N 36 INFONET 36 0 1 (75)
+% All degree centrality of 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+V 1 DEGV 1 [2] (75)
+% All degree centrality of 2. Undirected Erdos-Renyi random network [6.640] (75)
+V 2 DEGV 2 [2] (75)
+% All degree centrality of 29. Undirected Scale free random network (75)
+V 3 DEGV 29 [2] (75)
+% All degree centrality of 36. Small World random network [75,3,0.200] (75)
+V 4 DEGV 36 [2] (75)
+V 1 VECNAME Vector_red_original
+V 2 VECNAME Modelo_aleatorio
+V 3 VECNAME Libre_Escala
+N 36 NETNAME Small World random network [75,3,0.200]
+V 3 VECNAME Libre_escala
+V 4 VECNAME pequeno_mundo
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+V 4 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel1.txt" -1 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+E 29 DRAW 0 0 0 0 0
+E 29 DRAW 0 0 0 0 0
+% Small World random network generator
+N 37 SMALLWORLD [75, 2, 0.200] (75)
+% All degree centrality of 37. Small World random network [75,2,0.200] (75)
+V 5 DEGV 37 [2] (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+V 5 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"
+% Disposing Vector...
+V 5 DV  (75)
+% Disposing Network...
+N 37 DN  (75)
+% Small World random network generator
+N 38 SMALLWORLD [75, 3, 0.300] (75)
+% All degree centrality of 38. Small World random network [75,3,0.300] (75)
+V 6 DEGV 38 [2] (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+V 6 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"
+% Disposing Vector...
+V 6 DV  (75)
+% Disposing Vector...
+V 1 DV  (75)
+% All degree centrality of 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+V 7 DEGV 1 [2] (75)
+V 7 VECNAME red_original
+% Disposing Network...
+N 38 DN  (75)
+% All degree centrality of 36. Small World random network [75,3,0.200] (75)
+V 8 DEGV 36 [2] (75)
+% 36. Small World random network [75,3,0.200] (75)
+N 36 INFONET 36 0 1 (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+V 8 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"
+% Disposing Vector...
+V 8 DV  (75)
+% Distribution of Distances
+V 9 DISTRDISTALL 1 (75)
+V 9 VECNAME distancias_red_original
+% Distribution of Distances
+V 10 DISTRDISTALL 2 (75)
+V 10 VECNAME distancia_red_aleatoria
+V 10 VECNAME distancias_red_aleatoria
+% 2. Undirected Erdos-Renyi random network [6.640] (75)
+N 2 INFONET 2 0 1 (75)
+% Distribution of Distances
+V 11 DISTRDISTALL 29 (75)
+V 11 VECNAME distancias_libre_escala
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+V 11 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"
+% 29. Undirected Scale free random network (75)
+N 29 INFONET 29 0 1 (75)
+% 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+N 1 INFONET 1 0 1 (75)
+%  Undirected scale free random network generator
+N 39 SCALEF  [2 1 75 999999999 5 6.64000 0.20000 0.25000 0.25000] (75)
+% 39. Undirected Scale free random network (75)
+N 39 INFONET 39 0 1 (75)
+% Disposing Network...
+N 39 DN  (75)
+% Distribution of Distances
+V 12 DISTRDISTALL 36 (75)
+% 36. Small World random network [75,3,0.200] (75)
+N 36 INFONET 36 0 1 (75)
+% 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+N 1 INFONET 1 0 1 (75)
+% 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+N 1 INFONET 1 0 1 (75)
+E 1 DRAW 0 0 0 0 0

@@ -1,0 +1,198 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 1 RDN "E:\UCM\Redes Sociales\networks\red_depurada.net" (75)
+E 1 DRAW 0 0 0 0 0
+E 1 DRAW 0 0 0 0 0
+% Weighted Degree
+V 1 LINESUM 1 [2] (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+V 1 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel1.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+% Weighted Degree
+V 2 LINESUM 1 [0] (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+V 2 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"
+% Disposing Vector...
+V 2 DV  (75)
+% Disposing Vector...
+V 1 DV  (75)
+% All degree centrality of 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+V 3 DEGV 1 [2] (75)
+% Weighted Degree
+V 4 LINESUM 1 [2] (75)
+% All closeness centrality of 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+V 5 CLOSE 1 [2] (75)
+% Betweenness centrality of 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+V 6 BETWEEN 1 (75)
+% Hubs & Authorities
+C 1 HUBSAUTH 1 [75,75,6,0] (75)
+E 1 DRAW 0 0 0 0 0
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+C 1 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel1.txt" -1 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+% Hubs & Authorities
+C 2 HUBSAUTH 1 [75,75,6,1] (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+C 2 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel1.txt" -1 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+E 1 DRAW 0 0 0 0 0
+E 1 DRAW 0 0 0 0 0
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\centrality_degree.vec
+V 3 WV "E:\UCM\Redes Sociales\networks\centrality_degree.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\weighted_degree.vec
+V 4 WV "E:\UCM\Redes Sociales\networks\weighted_degree.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\closeness.vec
+V 5 WV "E:\UCM\Redes Sociales\networks\closeness.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\betweenness.vec
+V 6 WV "E:\UCM\Redes Sociales\networks\betweenness.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\h_original.vec
+V 7 WV "E:\UCM\Redes Sociales\networks\h_original.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\a_original.vec
+V 8 WV "E:\UCM\Redes Sociales\networks\a_original.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\h_looped.vec
+V 9 WV "E:\UCM\Redes Sociales\networks\h_looped.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\a_looped.vec
+V 10 WV "E:\UCM\Redes Sociales\networks\a_looped.vec" 0 (75)
+% Disposing Partition...
+C 2 DC  (75)
+% Disposing Partition...
+C 1 DC  (75)
+% Disposing Vector...
+V 10 DV  (75)
+% Disposing Vector...
+V 3 DV  (75)
+% Disposing Vector...
+V 4 DV  (75)
+% Disposing Vector...
+V 5 DV  (75)
+% Disposing Vector...
+V 6 DV  (75)
+% Disposing Vector...
+V 7 DV  (75)
+% Disposing Vector...
+V 8 DV  (75)
+% Disposing Vector...
+V 9 DV  (75)
+E 1 DRAW 0 0 0 0 0
+% # Louvain Community Detection. Coarsening and Refinement.                    #
+%  * Iteration: 1. Coarsening Phase.
+% Level=1
+% Shrinking
+% Level=2
+% Shrinking
+% Level=3
+%  * Iteration: 1. Refinement Phase.
+% Level=1
+%  * Iteration: 2. Coarsening Phase.
+% Shrinking
+% Level=2
+%  * Iteration: 2. Refinement Phase.
+%  Final partition
+C 3 MODULARITYML 1 20 50 1 20 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 4 MODULARITYML 1 20 50 10 20 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 5 MODULARITYML 1 20 50 100 20 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 6 MODULARITYML 1 20 50 10 20 0.8999999762 0.500000 (75)
+% Modularity of Network N1 according to Partition C6
+N 1 INFOMODULARITY 1 6 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 7 MODULARITYML 1 20 50 10 20 0.8000000119 0.500000 (75)
+% Modularity of Network N1 according to Partition C7
+N 1 INFOMODULARITY 1 7 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 8 MODULARITYML 1 20 50 10 20 0.6999999881 0.500000 (75)
+% Modularity of Network N1 according to Partition C8
+N 1 INFOMODULARITY 1 8 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 9 MODULARITYML 1 20 50 10 20 0.6000000238 0.500000 (75)
+% Modularity of Network N1 according to Partition C9
+N 1 INFOMODULARITY 1 9 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 10 MODULARITYML 1 20 50 10 20 0.5000000000 0.500000 (75)
+% Modularity of Network N1 according to Partition C10
+N 1 INFOMODULARITY 1 10 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 11 MODULARITYML 1 20 50 10 20 1.1000000238 0.500000 (75)
+% Modularity of Network N1 according to Partition C11
+N 1 INFOMODULARITY 1 11 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 12 MODULARITYML 1 20 50 10 20 1.2000000477 0.500000 (75)
+% Modularity of Network N1 according to Partition C12
+N 1 INFOMODULARITY 1 12 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 13 MODULARITYML 1 20 50 10 20 1.2999999523 0.500000 (75)
+% Modularity of Network N1 according to Partition C13
+N 1 INFOMODULARITY 1 13 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 14 MODULARITYML 1 20 50 10 20 1.3999999762 0.500000 (75)
+% Modularity of Network N1 according to Partition C14
+N 1 INFOMODULARITY 1 14 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 15 MODULARITYML 1 20 50 10 20 1.5000000000 0.500000 (75)
+% Modularity of Network N1 according to Partition C15
+N 1 INFOMODULARITY 1 15 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 16 MODULARITYML 1 20 50 10 20 1.6000000238 0.500000 (75)
+% Modularity of Network N1 according to Partition C16
+N 1 INFOMODULARITY 1 16 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 17 MODULARITYML 1 20 50 10 20 1.0499999523 0.500000 (75)
+% Modularity of Network N1 according to Partition C17
+N 1 INFOMODULARITY 1 17 1.0000000000 0.500000 (75)
+% Disposing Partition...
+C 17 DC  (75)
+% Disposing Partition...
+C 3 DC  (75)
+% Disposing Partition...
+C 4 DC  (75)
+% Disposing Partition...
+C 5 DC  (75)
+% Disposing Partition...
+C 6 DC  (75)
+% Disposing Partition...
+C 7 DC  (75)
+% Disposing Partition...
+C 8 DC  (75)
+% Disposing Partition...
+C 9 DC  (75)
+% Disposing Partition...
+C 10 DC  (75)
+% Disposing Partition...
+C 11 DC  (75)
+% Disposing Partition...
+C 12 DC  (75)
+% Disposing Partition...
+C 13 DC  (75)
+% Disposing Partition...
+C 14 DC  (75)
+% Disposing Partition...
+C 15 DC  (75)
+% Disposing Partition...
+C 16 DC  (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 18 MODULARITYML 1 20 50 10 20 1.0000000000 0.500000 (75)
+E 1 DRAW 18 0 0 0 0
+E 1 DRAW 18 0 0 0 0
+E 1 KAMADAINSIDE 18
+% Extracting Subnetworks induced by each selected Cluster
+N 6 EXTNETALL 1 18 [1-5] (17)
+E 2 DRAW 0 0 0 0 0
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\cluster_1.net
+N 2 WN "E:\UCM\Redes Sociales\networks\cluster_1.net" 0 (27)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\cluster_2.net
+N 3 WN "E:\UCM\Redes Sociales\networks\cluster_2.net" 0 (11)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\cluster_3.net
+N 4 WN "E:\UCM\Redes Sociales\networks\cluster_3.net" 0 (11)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\cluster_4.net
+N 5 WN "E:\UCM\Redes Sociales\networks\cluster_4.net" 0 (9)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\cluster_5.net
+N 6 WN "E:\UCM\Redes Sociales\networks\cluster_5.net" 0 (17)

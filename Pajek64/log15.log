@@ -1,0 +1,58 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 1 RDN "E:\UCM\Redes Sociales\networks\red_depurada.net" (75)
+% 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+N 1 INFONET 1 0 1 (75)
+E 1 DRAW 0 0 0 0 0
+E 1 DRAW 0 0 0 0 0
+% # Louvain Community Detection. Coarsening and Refinement.                    #
+%  * Iteration: 1. Coarsening Phase.
+% Level=1
+% Shrinking
+% Level=2
+% Shrinking
+% Level=3
+%  * Iteration: 1. Refinement Phase.
+% Level=1
+%  Final partition
+C 1 MODULARITYML 1 20 50 1 20 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 2 MODULARITYML 1 20 50 10 20 1.0000000000 0.500000 (75)
+% Disposing Partition...
+C 2 DC  (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 3 MODULARITYML 1 20 50 10 20 1.0000000000 0.500000 (75)
+% # Louvain Community Detection. Coarsening and Refinement.                    #
+%  * Iteration: 1. Coarsening Phase.
+% Level=1
+% Shrinking
+% Level=2
+% Shrinking
+% Level=3
+%  * Iteration: 1. Refinement Phase.
+% Level=1
+%  Final partition
+C 4 MODULARITYML 1 20 50 1 20 1.0000000000 0.500000 (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 5 MODULARITYML 1 20 50 100 20 1.0000000000 0.500000 (75)
+% # Louvain Community Detection. Coarsening and Refinement.                    #
+%  * Iteration: 1. Coarsening Phase.
+% Level=1
+% Shrinking
+% Level=2
+% Shrinking
+% Level=3
+%  * Iteration: 1. Refinement Phase.
+% Level=1
+%  * Iteration: 2. Coarsening Phase.
+% Shrinking
+% Level=2
+%  * Iteration: 2. Refinement Phase.
+%  Final partition
+C 6 MODULARITYML 1 20 50 1 20 1.0000000000 0.500000 (75)

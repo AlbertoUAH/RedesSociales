@@ -1,0 +1,180 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 1 RDN "E:\UCM\Redes Sociales\networks\red_depurada.net" (75)
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\backup\red_depurada.net
+N 2 RDN "E:\UCM\Redes Sociales\networks\backup\red_depurada.net" (75)
+% 2. E:\UCM\Redes Sociales\networks\backup\red_depurada.net (75)
+N 2 INFONET 2 0 1 (75)
+% 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+N 1 INFONET 1 0 1 (75)
+% Disposing Network...
+N 2 DN  (75)
+E 1 DRAW 0 0 0 0 0
+E 1 KAMADA
+E 1 DRAW 0 0 0 0 0
+% 1. E:\UCM\Redes Sociales\networks\red_depurada.net (75)
+N 1 INFONET 1 0 1 (75)
+% Bernoulli/Poisson random network generator
+N 3 ERDREN  [75, 6.640, 1, 0] (75)
+N 3 NETNAME modelo_aleatorio
+% 3. modelo_aleatorio (75)
+N 3 INFONET 3 0 1 (75)
+%  Undirected scale free random network generator
+N 4 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+% Disposing Network...
+N 4 DN  (75)
+N 1 NETNAME red_depurada
+%  Undirected scale free random network generator
+N 5 SCALEF  [2 1 75 999999999 7 6.64000 0.20000 0.25000 0.25000] (75)
+N 5 NETNAME modelo_libre_escala
+% Small World random network generator
+N 6 SMALLWORLD [75, 3, 0.200] (75)
+% 6. Small World random network [75,3,0.200] (75)
+N 6 INFONET 6 0 1 (75)
+N 6 NETNAME red_pequeno_mundo
+N 6 NETNAME modelo_pequeno_mundo
+% 6. modelo_pequeno_mundo (75)
+N 6 INFONET 6 0 1 (75)
+% All degree centrality of 1. red_depurada (75)
+V 1 DEGV 1 [2] (75)
+V 1 VECNAME grados_red_depurada
+% All degree centrality of 3. modelo_aleatorio (75)
+V 2 DEGV 3 [2] (75)
+V 2 VECNAME grados_red_aleatoria
+% All degree centrality of 5. modelo_libre_escala (75)
+V 3 DEGV 5 [2] (75)
+N 5 NETNAME modelo_libre_escala
+V 3 VECNAME grados_red_libre_escala
+% All degree centrality of 6. modelo_pequeno_mundo (75)
+V 4 DEGV 6 [2] (75)
+V 4 VECNAME grados_red_pequeno_mundo
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+V 1 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel1.txt" -1 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+% Distribution of Distances
+V 5 DISTRDISTALL 1 (75)
+V 5 VECNAME Distribution of Distances in N1
+V 5 VECNAME distancias_red_aleatoria
+V 5 VECNAME distancias_red_depurada
+% Distribution of Distances
+V 6 DISTRDISTALL 3 (75)
+V 6 VECNAME distancias_red_aleatoria
+% Distribution of Distances
+V 7 DISTRDISTALL 5 (75)
+V 7 VECNAME distancias_modelo_libre_escala
+% Distribution of Distances
+V 8 DISTRDISTALL 6 (75)
+V 8 VECNAME distancias_red_pequeno_mundo
+V 7 VECNAME distancias_red_libre_escala
+% 6. modelo_pequeno_mundo (75)
+N 6 INFONET 6 0 1 (75)
+% 1. red_depurada (75)
+N 1 INFONET 1 0 1 (75)
+% 3. modelo_aleatorio (75)
+N 3 INFONET 3 0 1 (75)
+% 3. modelo_aleatorio (75)
+N 3 INFONET 3 0 1 (75)
+% 5. modelo_libre_escala (75)
+N 5 INFONET 5 0 1 (75)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+V 7 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"
+% 5. modelo_libre_escala (75)
+N 5 INFONET 5 0 1 (75)
+% 5. modelo_libre_escala (75)
+N 5 INFONET 5 0 1 (75)
+% 6. modelo_pequeno_mundo (75)
+N 6 INFONET 6 0 1 (75)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 1 WN "E:\UCM\Redes Sociales\networks\red_depurada.net" 0 (75)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\modelo_aleatorio.net
+N 3 WN "E:\UCM\Redes Sociales\networks\modelo_aleatorio.net" 0 (75)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\modelo_libre_escala.net
+N 5 WN "E:\UCM\Redes Sociales\networks\modelo_libre_escala.net" 0 (75)
+% Saving network to file   ---    E:\UCM\Redes Sociales\networks\modelo_pequeno_mundo.net
+N 6 WN "E:\UCM\Redes Sociales\networks\modelo_pequeno_mundo.net" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\grados_red_depurada.vec
+V 1 WV "E:\UCM\Redes Sociales\networks\grados_red_depurada.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\grados_red_aleatoria.vec
+V 2 WV "E:\UCM\Redes Sociales\networks\grados_red_aleatoria.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\grados_red_libre_escala.vec
+V 3 WV "E:\UCM\Redes Sociales\networks\grados_red_libre_escala.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\grados_red_pequeno_mundo.vec
+V 4 WV "E:\UCM\Redes Sociales\networks\grados_red_pequeno_mundo.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\distancias_red_depurada.vec
+V 5 WV "E:\UCM\Redes Sociales\networks\distancias_red_depurada.vec" 0 (5)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\distancias_red_aleatoria.vec
+V 6 WV "E:\UCM\Redes Sociales\networks\distancias_red_aleatoria.vec" 0 (4)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\distancias_red_libre_escala.vec
+V 7 WV "E:\UCM\Redes Sociales\networks\distancias_red_libre_escala.vec" 0 (5)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\distancias_red_pequeno_mundo.vec
+V 8 WV "E:\UCM\Redes Sociales\networks\distancias_red_pequeno_mundo.vec" 0 (5)
+% All degree centrality of 1. red_depurada (75)
+V 9 DEGV 1 [2] (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\grados_red_aleatoria_2.vec
+V 9 WV "E:\UCM\Redes Sociales\networks\grados_red_aleatoria_2.vec" 0 (75)
+V 9 VECNAME grados_red_depurada_2
+V 9 VECNAME degree_centrality
+% Weighted Degree
+V 10 LINESUM 1 [2] (75)
+V 10 VECNAME weighted_degree
+% All closeness centrality of 1. red_depurada (75)
+V 11 CLOSE 1 [2] (75)
+V 11 VECNAME closeness
+% Betweenness centrality of 1. red_depurada (75)
+V 12 BETWEEN 1 (75)
+V 12 VECNAME betweenness
+% Hubs & Authorities
+C 1 HUBSAUTH 1 [75,75,6,0] (75)
+V 14 VECNAME ha_original
+% Hubs & Authorities
+C 2 HUBSAUTH 1 [75,75,6,1] (75)
+V 16 VECNAME ha_looped
+% Disposing Vector...
+V 1 DV  (75)
+% Disposing Vector...
+V 2 DV  (75)
+% Disposing Vector...
+V 3 DV  (75)
+% Disposing Vector...
+V 4 DV  (75)
+% Disposing Vector...
+V 5 DV  (5)
+% Disposing Vector...
+V 6 DV  (4)
+% Disposing Vector...
+V 7 DV  (5)
+% Disposing Vector...
+V 8 DV  (5)
+V 9 VECNAME centrality_degree
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel3.txt
+C 2 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel3.txt" -1 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel3.txt"
+V 13 VECNAME h_original
+V 14 VECNAME a_original
+V 15 VECNAME h_looped
+V 16 VECNAME a_looped
+E 1 DRAW 0 0 0 0 0
+E 1 DRAW 0 0 0 0 0
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\centrality_degree.vec
+V 9 WV "E:\UCM\Redes Sociales\networks\centrality_degree.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\weighted_degree.vec
+V 10 WV "E:\UCM\Redes Sociales\networks\weighted_degree.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\closeness.vec
+V 11 WV "E:\UCM\Redes Sociales\networks\closeness.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\betweenness.vec
+V 12 WV "E:\UCM\Redes Sociales\networks\betweenness.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\h_original.vec
+V 13 WV "E:\UCM\Redes Sociales\networks\h_original.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\a_original.vec
+V 14 WV "E:\UCM\Redes Sociales\networks\a_original.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\h_looped.vec
+V 15 WV "E:\UCM\Redes Sociales\networks\h_looped.vec" 0 (75)
+% Saving vector to file   ---    E:\UCM\Redes Sociales\networks\a_looped.vec
+V 16 WV "E:\UCM\Redes Sociales\networks\a_looped.vec" 0 (75)

@@ -1,0 +1,83 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 1 RDN "E:\UCM\Redes Sociales\networks\red_depurada.net" (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 1 MODULARITYML 1 20 50 10 20 1.0000000000 0.500000 (75)
+E 1 DRAW 0 0 0 0 0
+E 1 DRAW 1 0 0 0 0
+E 1 KAMADAINSIDE 1
+% Extracting Subnetworks induced by each selected Cluster
+N 6 EXTNETALL 1 1 [1-5] (17)
+E 6 DRAW 6 0 0 0 0
+% Saving network to file   ---    E:\UCM\Redes Sociales\clusters\cluster_1_net.net
+N 2 WN "E:\UCM\Redes Sociales\clusters\cluster_1_net.net" 0 (27)
+% Saving network to file   ---    E:\UCM\Redes Sociales\clusters\cluster_2_net.net
+N 3 WN "E:\UCM\Redes Sociales\clusters\cluster_2_net.net" 0 (11)
+% Saving network to file   ---    E:\UCM\Redes Sociales\clusters\cluster_3_net.net
+N 4 WN "E:\UCM\Redes Sociales\clusters\cluster_3_net.net" 0 (11)
+% Saving network to file   ---    E:\UCM\Redes Sociales\clusters\cluster_4_net.net
+N 5 WN "E:\UCM\Redes Sociales\clusters\cluster_4_net.net" 0 (9)
+% Saving network to file   ---    E:\UCM\Redes Sociales\clusters\cluster_5_net.net
+N 6 WN "E:\UCM\Redes Sociales\clusters\cluster_5_net.net" 0 (17)
+% Saving partition to file   ---    E:\UCM\Redes Sociales\clusters\cluster_1_partition.clu
+C 2 WC "E:\UCM\Redes Sociales\clusters\cluster_1_partition.clu" (27)
+% Saving partition to file   ---    E:\UCM\Redes Sociales\clusters\cluster_2_partition.clu
+C 3 WC "E:\UCM\Redes Sociales\clusters\cluster_2_partition.clu" (11)
+% Saving partition to file   ---    E:\UCM\Redes Sociales\clusters\cluster_3_partition.clu
+C 4 WC "E:\UCM\Redes Sociales\clusters\cluster_3_partition.clu" (11)
+% Saving partition to file   ---    E:\UCM\Redes Sociales\clusters\cluster_4_partition.clu
+C 5 WC "E:\UCM\Redes Sociales\clusters\cluster_4_partition.clu" (9)
+% Saving partition to file   ---    E:\UCM\Redes Sociales\clusters\cluster_5_partition.clu
+C 6 WC "E:\UCM\Redes Sociales\clusters\cluster_5_partition.clu" (17)
+E 2 DRAW 0 0 0 0 0
+E 2 DRAW 2 0 0 0 0
+E 2 DRAW 0 0 0 0 0
+% Shrinking
+N 7 SHR 1 1 [1 ,0,1] (5)
+E 7 DRAW 0 0 0 0 0
+% Disposing Network...
+N 2 DN  (27)
+% Disposing Network...
+N 3 DN  (11)
+% Disposing Network...
+N 4 DN  (11)
+% Disposing Network...
+N 5 DN  (9)
+% Disposing Network...
+N 6 DN  (17)
+% Disposing Partition...
+C 2 DC  (27)
+% Disposing Partition...
+C 3 DC  (11)
+% Disposing Partition...
+C 4 DC  (11)
+% Disposing Partition...
+C 5 DC  (9)
+% Disposing Partition...
+C 6 DC  (17)
+E 7 DRAW 0 0 0 0 0
+% Shrinking
+N 8 SHR 1 1 [10 ,0,1] (5)
+E 8 DRAW 0 0 0 0 0
+% Shrinking
+N 9 SHR 1 1 [5 ,0,1] (5)
+E 9 DRAW 0 0 0 0 0
+% Shrinking
+N 10 SHR 1 1 [4 ,0,1] (5)
+E 10 DRAW 0 0 0 0 0
+E 7 DRAW 0 0 0 0 0
+E 9 DRAW 0 0 0 0 0
+E 10 DRAW 0 0 0 0 0
+E 7 DRAW 0 0 0 0 0
+% Saving Network to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+N 7 WTABNET "E:\UCM\Redes Sociales\Pajek64\excel1.txt" 11 1 (5)
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+% Saving Network to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+N 7 WTABNET "E:\UCM\Redes Sociales\Pajek64\excel1.txt" 11 1 (5)
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"

@@ -1,0 +1,66 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 1 RDN "E:\UCM\Redes Sociales\networks\red_depurada.net" (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 1 MODULARITYML 1 20 50 10 20 1.0000000000 0.500000 (75)
+% Shrinking
+N 2 SHR 1 1 [1 ,0,1] (5)
+E 2 DRAW 0 0 0 0 0
+% Saving Network to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+N 2 WTABNET "E:\UCM\Redes Sociales\Pajek64\excel1.txt" 11 1 (5)
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+% Shrinking
+N 3 SHR 1 1 [6 ,0,1] (5)
+E 3 DRAW 0 0 0 0 0
+% Disposing Network...
+N 3 DN  (5)
+% Disposing Partition...
+C 3 DC  (5)
+E 1 DRAW 0 0 0 0 0
+E 1 DRAW 1 0 0 0 0
+E 1 KAMADAINSIDE 1
+% Shrinking
+N 4 SHR 1 1 [3 ,0,1] (5)
+E 4 DRAW 0 0 0 0 0
+E 4 DRAW 0 0 0 0 0
+E 1 DRAW 0 0 0 0 0
+E 1 DRAW 1 0 0 0 0
+% Disposing Network...
+N 4 DN  (5)
+% Disposing Partition...
+C 4 DC  (5)
+% Shrinking
+N 5 SHR 1 1 [3 ,0,1] (5)
+E 5 DRAW 0 0 0 0 0
+E 1 DRAW 0 0 0 0 0
+% Disposing Partition...
+C 5 DC  (5)
+% Disposing Network...
+N 2 DN  (5)
+% Disposing Network...
+N 5 DN  (5)
+% Disposing Partition...
+C 2 DC  (5)
+% Shrinking
+N 6 SHR 1 1 [4 ,0,1] (5)
+E 6 DRAW 0 0 0 0 0
+E 1 DRAW 1 0 0 0 0
+E 6 DRAW 0 0 0 0 0
+E 1 DRAW 0 0 0 0 0
+E 1 DRAW 1 0 0 0 0
+% Saving network to file   ---    E:\UCM\Redes Sociales\clusters\cluster_4_lineas.net
+N 6 WN "E:\UCM\Redes Sociales\clusters\cluster_4_lineas.net" 0 (5)
+% Saving partition to file   ---    E:\UCM\Redes Sociales\clusters\cluster_4_lineas_partition.clu
+C 6 WC "E:\UCM\Redes Sociales\clusters\cluster_4_lineas_partition.clu" (5)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+C 1 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 1 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+C 1 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" 0 1 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"

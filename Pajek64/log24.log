@@ -1,0 +1,77 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 1 RDN "E:\UCM\Redes Sociales\networks\red_depurada.net" (75)
+%  Louvain Community Detection. Coarsening and Refinement.                    
+C 1 MODULARITYML 1 20 50 10 20 1.0000000000 0.500000 (75)
+E 1 DRAW 1 0 0 0 0
+E 1 KAMADAINSIDE 1
+E 1 DRAW 1 0 0 0 0
+% Extracting Subnetworks induced by each selected Cluster
+N 6 EXTNETALL 1 1 [1-5] (17)
+E 6 DRAW 0 0 0 0 0
+E 4 DRAW 4 0 0 0 0
+E 5 DRAW 5 0 0 0 0
+% All degree centrality of 5. Subnetwork of N1 induced by C1 [4] (9)
+V 1 DEGV 5 [2] (9)
+E 5 DRAW 5 0 0 0 0
+E 5 DRAW 5 0 0 0 0
+% Weighted Degree
+V 2 LINESUM 5 [2] (9)
+% All closeness centrality of 5. Subnetwork of N1 induced by C1 [4] (9)
+V 3 CLOSE 5 [2] (9)
+% Betweenness centrality of 5. Subnetwork of N1 induced by C1 [4] (9)
+V 4 BETWEEN 5 (9)
+% Hubs & Authorities
+C 7 HUBSAUTH 5 [9,9,6,0] (9)
+% Hubs & Authorities
+C 8 HUBSAUTH 5 [9,9,6,1] (9)
+E 5 DRAW 8 0 0 0 0
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+C 8 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel1.txt" -1 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+% Shrinking
+N 7 SHR 1 1 [1 ,0,1] (5)
+% Disposing Network...
+N 7 DN  (5)
+% Disposing Partition...
+C 9 DC  (5)
+E 5 DRAW 5 0 0 0 0
+E 6 DRAW 6 0 0 0 0
+% Disposing Vector...
+V 8 DV  (9)
+% Disposing Vector...
+V 1 DV  (9)
+% Disposing Vector...
+V 2 DV  (9)
+% Disposing Vector...
+V 3 DV  (9)
+% Disposing Vector...
+V 4 DV  (9)
+% Disposing Vector...
+V 5 DV  (9)
+% Disposing Vector...
+V 6 DV  (9)
+% Disposing Vector...
+V 7 DV  (9)
+% All degree centrality of 6. Subnetwork of N1 induced by C1 [5] (17)
+V 9 DEGV 6 [2] (17)
+% Weighted Degree
+V 10 LINESUM 6 [2] (17)
+% All closeness centrality of 6. Subnetwork of N1 induced by C1 [5] (17)
+V 11 CLOSE 6 [2] (17)
+% Betweenness centrality of 6. Subnetwork of N1 induced by C1 [5] (17)
+V 12 BETWEEN 6 (17)
+E 6 DRAW 6 0 0 0 0
+% Hubs & Authorities
+C 10 HUBSAUTH 6 [17,17,6,0] (17)
+% Hubs & Authorities
+C 11 HUBSAUTH 6 [17,17,6,1] (17)
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel2.txt
+C 11 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel2.txt" -1 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel2.txt"

@@ -1,0 +1,68 @@
+NETBEGIN 1
+CLUBEGIN 1
+PERBEGIN 1
+CLSBEGIN 1
+HIEBEGIN 1
+VECBEGIN 1
+
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\erdos_renyi.net
+N 1 RDN "E:\UCM\Redes Sociales\networks\erdos_renyi.net" (75)
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\libre_escala.net
+N 2 RDN "E:\UCM\Redes Sociales\networks\libre_escala.net" (75)
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_depurada.net
+N 3 RDN "E:\UCM\Redes Sociales\networks\red_depurada.net" (75)
+% Reading Network   ---    E:\UCM\Redes Sociales\networks\red_inicial.net
+N 4 RDN "E:\UCM\Redes Sociales\networks\red_inicial.net" (77)
+% Reading Partition   ---    E:\UCM\Redes Sociales\networks\particion_constante.clu
+C 1 RDC "E:\UCM\Redes Sociales\networks\particion_constante.clu" (75)
+% Reading Partition   ---    E:\UCM\Redes Sociales\networks\vertices_normal.clu
+C 2 RDC "E:\UCM\Redes Sociales\networks\vertices_normal.clu" (75)
+% Reading Vector   ---    E:\UCM\Redes Sociales\networks\vector_random.vec
+V 1 RDV "E:\UCM\Redes Sociales\networks\vector_random.vec" (75)
+% Reading Vector   ---    E:\UCM\Redes Sociales\networks\vector_normal.vec
+V 2 RDV "E:\UCM\Redes Sociales\networks\vector_normal.vec" (75)
+% Reading Vector   ---    E:\UCM\Redes Sociales\networks\vector_libre_escala.vec
+V 3 RDV "E:\UCM\Redes Sociales\networks\vector_libre_escala.vec" (75)
+E 3 DRAW 0 0 0 0 0
+% Distribution of Distances
+V 4 DISTRDISTALL 3 (75)
+E 3 DRAW 0 0 0 0 0
+% Saving Partition(s)/Vector(s) to tab delimited file   ---    E:\UCM\Redes Sociales\Pajek64\excel1.txt
+C 2 WTABCLUVEC "E:\UCM\Redes Sociales\Pajek64\excel1.txt" 0 2 2 11 1
+EXCEL "Excel" "E:\UCM\Redes Sociales\Pajek64\excel1.txt"
+% Small World random network generator
+N 5 SMALLWORLD [75, 2, 0.200] (75)
+E 5 DRAW 0 0 0 0 0
+E 5 KAMADA
+% 5. Small World random network [75,2,0.200] (75)
+N 5 INFONET 5 0 1 (75)
+% Disposing Network...
+N 5 DN  (75)
+% Small World random network generator
+N 6 SMALLWORLD [75, 4, 0.200] (75)
+% 6. Small World random network [75,4,0.200] (75)
+N 6 INFONET 6 0 1 (75)
+% Disposing Network...
+N 6 DN  (75)
+% Small World random network generator
+N 7 SMALLWORLD [75, 3, 0.200] (75)
+% 7. Small World random network [75,3,0.200] (75)
+N 7 INFONET 7 0 1 (75)
+% Disposing Network...
+N 7 DN  (75)
+% Small World random network generator
+N 8 SMALLWORLD [75, 3, 0.150] (75)
+% 8. Small World random network [75,3,0.150] (75)
+N 8 INFONET 8 0 1 (75)
+% Disposing Network...
+N 8 DN  (75)
+% Small World random network generator
+N 9 SMALLWORLD [75, 3, 0.500] (75)
+% 9. Small World random network [75,3,0.500] (75)
+N 9 INFONET 9 0 1 (75)
+% Disposing Network...
+N 9 DN  (75)
+% Small World random network generator
+N 10 SMALLWORLD [75, 3, 0.200] (75)
+% 10. Small World random network [75,3,0.200] (75)
+N 10 INFONET 10 0 1 (75)
